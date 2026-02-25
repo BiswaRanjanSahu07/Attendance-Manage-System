@@ -11,7 +11,7 @@ function Accordion({ type = 'single', defaultValue, children, className }) {
       setOpen(o => o.includes(value) ? o.filter(v => v !== value) : [...o, value])
     }
   }
-
+  
   function isOpen(value) {
     return type === 'single' ? open === value : open.includes(value)
   }
